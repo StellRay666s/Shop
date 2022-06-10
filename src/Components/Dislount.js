@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../App.scss';
 
-export default function Dislount() {
+export default function Dislount({ id }) {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [moveCount, setMoveCount] = useState(0);
@@ -31,7 +31,7 @@ export default function Dislount() {
 
   return (
     <div>
-      <div className="wrapperDiskount">
+      <div className="wrapperDiskount" id={id}>
         <div
           className="leavesDislount"
           style={{ transform: `translate(${x / 100}px, ${y / 100}px)` }}>

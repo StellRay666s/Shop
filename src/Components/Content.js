@@ -3,7 +3,7 @@ import '../App.scss';
 
 export default function Content(props) {
   return (
-    <div className="topBlok">
+    <div className="topBlok" id={props.id}>
       <div className="items">
         <div className="cartItems">
           <img width={325} height={328} src={props.imgUrl} />

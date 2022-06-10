@@ -52,6 +52,7 @@ function App() {
           <div className="content_Block">
             {items.map((obj) => (
               <Content
+                id="content"
                 content={addToBasket}
                 onClickSee={() => {
                   setAdd([...addToBasket, { ...obj, counter: 1 }]);
@@ -71,6 +72,7 @@ function App() {
           <div className="DrinksIcecream">
             {getCat.map((obj) => (
               <Drinks
+                id="drinks"
                 onClickSee={() => {
                   setAdd([...addToBasket, { ...obj, counter: 1 }]);
                   setInBusket(true);
@@ -84,8 +86,8 @@ function App() {
             ))}
           </div>
         </div>
-        <Dislount />
-        <Delevery />
+        <Dislount id="discount" />
+        <Delevery id="delevery" />
       </div>
     </div>
   );

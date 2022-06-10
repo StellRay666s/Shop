@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.scss';
-export default function Delevery() {
+export default function Delevery({ id }) {
   return (
-    <div className="deliveryBlock">
+    <div className="deliveryBlock" id={id}>
       <div className="textBox">
         <h1>Доставка и оплата</h1>
         <div className="p1">
